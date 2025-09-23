@@ -1,0 +1,12 @@
+{% extends 'faculty/base.html' %}
+
+{% block title %}{{ program.name }}{% endblock %}
+
+{% block content %}
+<h1>{{ program.name }} ({{ program.code }})</h1>
+<p>{{ program.description|linebreaks }}</p>
+<h3>Дисципліни:</h3>
+<p>{{ program.disciplines|linebreaks }}</p>
+<p><strong>Координатор:</strong> {{ program.coordinator_name }}<br>
+<strong>Контакт:</strong> {{ program.coordinator_contact }}</p>
+{% endblock %}
