@@ -1,0 +1,28 @@
+{% extends 'faculty/base.html' %}
+
+{% block title %}Про Факультет Інформатики{% endblock %}
+
+{% block content %}
+<section style="background:#eef4fb;padding:2rem 1.5rem;border-radius:8px;box-shadow:0 2px 8px #eef;">
+    <h1 style="color:#004080;text-align:center;margin-bottom:1rem;font-size:2.2rem;">
+        Про Факультет Інформатики
+    </h1>
+    <p style="font-size:1.18rem;line-height:1.7;text-align:center;color:#222;max-width:760px;margin:0 auto;">
+        Ласкаво просимо на сайт Факультету Інформатики НаУКМА.<br>
+        Тут можна знайти всю актуальну інформацію про <span style="color:#0056b3;font-weight:600;">кафедри</span>,
+        <span style="color:#0056b3;font-weight:600;">спеціальності</span> та <span style="color:#0056b3;font-weight:600;">викладачів</span>.<br>
+        Дізнавайтесь про програми, перспективи, здобутки та партнерів факультету!
+    </p>
+    <div style="margin-top:2rem;">
+        <ul style="display:flex;justify-content:center;gap:2.5rem;list-style-type:none;padding:0;">
+            <li><a href="{% url 'department_list' %}" style="text-decoration:none;padding:0.7rem 2rem;background:#004080;color:white;border-radius:5px;font-weight:600;transition:background 0.2s;">Кафедри</a></li>
+            <li><a href="{% url 'program_list' %}" style="text-decoration:none;padding:0.7rem 2rem;background:#0056b3;color:white;border-radius:5px;font-weight:600;transition:background 0.2s;">Спеціальності</a></li>
+        </ul>
+    </div>
+    <div style="margin-top:2rem;">
+        <p style="text-align:center;color:#555;font-size:1.07rem;">
+            <em>Стань частиною дружньої команди НаУКМА — обирай свою освітню програму і доєднуйся до інноваторів ІТ!</em>
+        </p>
+    </div>
+</section>
+{% endblock %}
